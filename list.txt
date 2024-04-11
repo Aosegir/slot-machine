@@ -1,0 +1,6 @@
+List of things to do
+
+1. Create flexbox for slot Machine
+2. Find images of possible outcomes and assign probabilities
+3. Create button that provides randomized image in each slot
+4. Assign money counter to keep track of total money won/lost

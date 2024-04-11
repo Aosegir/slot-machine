@@ -1,4 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid skyblue;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slot {
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
 }
