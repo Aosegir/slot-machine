@@ -70,11 +70,12 @@ main {
 
 #inner-box {
     border: 10px solid rgb(211, 31, 31);
-    background-color: rgb(233, 230, 230);
+    background-color: maroon;
 }
 
 .slot {
     border: 5px solid maroon;
+    padding: 20px 0;
 }
 
 button {
@@ -85,13 +86,13 @@ button {
     background-color: rgb(59, 58, 58);
     color: white;
     margin: 10px;
+    border: 3px solid black;
     border-radius: 5px;
     font-family:'Courier New', Courier, monospace;
     font-weight: 900;
     letter-spacing: 5px;
-    box-shadow: 2px 2px 2px gray;
 }
 
 img {
-    background-color: maroon;
+    background-color: rgb(233, 230, 230)
 }
