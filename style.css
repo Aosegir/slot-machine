@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid skyblue;
 }
 
 h1 {
@@ -9,7 +8,6 @@ h1 {
 }
 
 img {
-    background: transparent;
     height: 100%;
     width: 100%;
 }
@@ -19,19 +17,81 @@ button {
     width: 75px;
 }
 
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    justify-content: space-around;
-}
 
 .slot {
     height: 250px;
     width: 250px;
     justify-content: center;
     align-items: center;
+}
+
+/* -- FLEX ALIGNMENT -- */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.center {
+    justify-content: center;
+}
+
+/* -- STYLIZING -- */
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px gray;
+}
+
+main {
+    margin: 2% 5% 5% 5%;
+    border: 15px solid rgb(56, 44, 44);
+    border-radius: 5px;
+    background-color: rgb(207, 57, 57);
+}
+
+#outer-box {
+    border: 15px solid rgb(46, 44, 44);
+    margin: 5%;
+    padding: 25px;
+    background-color: rgb(243, 214, 120);
+}
+
+#inner-box {
+    border: 10px solid rgb(211, 31, 31);
+    background-color: rgb(233, 230, 230);
+}
+
+.slot {
+    border: 5px solid maroon;
+}
+
+button {
+    width: 250px;
+    height: 100px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+    letter-spacing: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+img {
+    background-color: maroon;
 }
