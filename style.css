@@ -4,6 +4,21 @@
     border: 1px solid skyblue;
 }
 
+h1 {
+    text-align: center;
+}
+
+img {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    height: 35px;
+    width: 75px;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -19,14 +34,4 @@
     width: 250px;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    text-align: center;
-}
-
-img {
-    background: transparent;
-    height: 100%;
-    width: 100%;
 }
