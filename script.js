@@ -34,6 +34,17 @@ function generateSlotResult () {
     return returnImage;
 }
 
+function generateSlotImage (timeoutNum, slot) {
+    let imageResult;
+    for(let i = 0; i < timeoutNum; i++) {
+        setTimeout(() => {
+            imageResult = generateSlotResult();
+            slot.src = `./images/${imageResult}.png`;
+            slot.alt = imageResult;
+        }, 150 * i);
+    }
+}
+
 
 const spinButton = document.getElementById('spin-button');
 const slotOne = document.getElementById('slot-1');
@@ -41,7 +52,18 @@ const slotTwo = document.getElementById('slot-2');
 const slotThree = document.getElementById('slot-3');
 
 spinButton.addEventListener('click', () => {
-    slotOne.src = `./images/${generateSlotResult()}.png`;
-    slotTwo.src = `./images/${generateSlotResult()}.png`;
-    slotThree.src = `./images/${generateSlotResult()}.png`;
+
+    generateSlotImage(50, slotOne);
+    generateSlotImage(70, slotTwo);
+    generateSlotImage(90, slotThree);
+
+    setTimeout(() => {
+        if(slotOne.alt == slotTwo.alt && slotOne.alt == slotThree.alt) {
+            alert("super jackpot! you did it!");
+        } else if (slotOne.alt == slotTwo.alt || slotOne.alt == slotThree.alt || slotTwo.alt == slotThree.alt) {
+            alert("regular jackpot! you kinda did it!");
+        } else {
+            alert("too bad!");
+        }
+    }, 13600);
 });
